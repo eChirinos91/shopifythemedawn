@@ -1,0 +1,112 @@
+.collection-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .collection-products .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .collection-products .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .collection-products .product h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+  }
+  
+  .collection-products .product-image img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .collection-products .product-price {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .collection-products .product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .collection-products form {
+    margin-top: 10px;
+  }
+  
+  .collection-products button[type="submit"] {
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+  }
+  
+  .collection-products button[type="submit"]:hover {
+    background-color: #4cae4c;
+  }
+  
+  #error-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  /* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
